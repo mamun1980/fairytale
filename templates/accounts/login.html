@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block container %}
+
+{% include 'partials/header.html' %}
+
+<!--Main layout-->
+<main class="mt-5 pt-5">
+    <div class="container">
+
+        <!--Section: Post-->
+        <section class="mt-4">
+
+            <!--Grid row-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-8 mb-4">
+
+                    <!--Featured Image-->
+                    <div class="card mb-4 wow fadeIn">
+
+                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(144).jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <!--/.Featured Image-->
+
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-4 mb-4">
+                    <!--Card : Dynamic content wrapper-->
+                    <div class="card mb-4 text-center wow fadeIn">
+
+                        <div class="card-header">Login / Signup</div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!-- Default form login -->
+                            <form>
+
+                                <!-- Default input email -->
+                                <label for="defaultFormEmailEx" class="grey-text">Your email</label>
+                                <input type="email" id="defaultFormLoginEmailEx" class="form-control">
+
+                                <br>
+
+                                <!-- Default input password -->
+                                <label for="defaultFormNameEx" class="grey-text">Your name</label>
+                                <input type="text" id="defaultFormNameEx" class="form-control">
+
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-info btn-md" type="submit">Sign up</button>
+                                </div>
+                            </form>
+                            <!-- Default form login -->
+
+                        </div>
+
+                    </div>
+                    <!--/.Card : Dynamic content wrapper-->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </section>
+        <!--Section: Post-->
+
+    </div>
+</main>
+<!--Main layout-->
+{% endblock container %}
