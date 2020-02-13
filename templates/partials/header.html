@@ -28,6 +28,7 @@
                     <li class="nav-item">
                         <a class="nav-link waves-effect btn btn-flat" href="/books/" >Books</a>
                     </li>
+                    {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link waves-effect btn btn-flat"
                             href="/accounts/employees/" >Employees</a>
@@ -40,6 +41,7 @@
                         <a class="nav-link waves-effect btn btn-flat"
                             href="/accounts/modarators/" >Modarators</a>
                     </li>
+                    {% endif %}
                     <li class="nav-item">
                         <a class="nav-link waves-effect btn btn-flat" href="/contact-us/" >Contact Us</a>
                     </li>
@@ -49,11 +51,11 @@
                 </ul>
 
                 <!-- Right -->
-                <ul class="navbar-nav nav-flex-icons">
-
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                {% if not user.is_authenticated %}
                     <li class="nav-item">
                         <a href="{% url 'login' %}" class="nav-link btn btn-flat">
-                            Login
+                             Login
                         </a>
                     </li>
                     <li class="nav-item">
@@ -61,6 +63,44 @@
                             Sign up
                         </a>
                     </li>
+                {% else %}
+                    
+                    <!-- Split button -->
+                    
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect my-2 mr-3">1
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn-floating fa-stack my-2 mr-3" role="button" style="color:#3B5998">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="btn-floating fa-stack my-2 mr-3" role="button">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                            </a>
+                            
+                        </li>
+                        <li class="nav-item avatar dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle z-depth-0"
+                                alt="avatar image" height="40">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-55">
+                                <a class="dropdown-item" href="/dashboard/">Dashboard</a>
+                                <a class="dropdown-item" href="/accounts/profile/">Profile</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="{% url 'logout' %}" class="dropdown-item">Logout</a>
+                            </div>
+                        </li>
+                    
+                    
+                {% endif %}
 
                 </ul>
 

@@ -9,9 +9,9 @@
     <div class="card-body px-lg-5 pt-0 mt-4">
 
         <!-- Form -->
-        <form class="text-center" style="color: #757575;" action="/accounts/login/">
-
-        <!-- Email -->
+        <form class="text-center" method="post" action="{% url 'login' %}">
+        {% csrf_token %}
+            <!-- Email -->
             <div class="md-form">
                 <input type="text" id="username" name="username" class="form-control">
                 <label for="username">E-mail / Username</label>
@@ -33,10 +33,10 @@
                 </div>
                 <div>
                 <!-- Forgot password -->
-                <a href="accounts/password_reset/">Forgot password?</a>
+                <a href="{% url 'password_reset' %}">Forgot password?</a>
                 </div>
             </div>
-
+            <input type="hidden" name="next" value="{{ next }}"> 
             <!-- Sign in button -->
             <button class="btn btn-outline-info btn-block my-4 waves-effect rounded-pill" type="submit">Sign in</button>
 

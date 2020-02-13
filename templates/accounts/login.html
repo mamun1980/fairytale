@@ -7,7 +7,9 @@
 <!--Main layout-->
 <main class="mt-5 pt-5">
     <div class="container">
-
+        {% if form.errors %}
+            <p class="alert alert-danger">Your username and password didn't match. Please try again.</p>
+        {% endif %}
         <!--Section: Post-->
         <section class="row no-gutters mt-4">
             <div class="col-md-6">
