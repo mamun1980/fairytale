@@ -21,11 +21,72 @@
             <canvas class="bg-white" id="barChart"></canvas>
         </div>
     </div>
+    <div class="w-100"><hr/></div>
+    <div class="row">
+        <div class="col-md-6 ">
+            <div class="view">
+                <img src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg" class="img-fluid wow fadeInUp" alt="placeholder">
+                <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                    <p class="white-text">strong overlay</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="view">
+                <img src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg" class="img-fluid wow fadeInUp" alt="Image of ballons flying over canyons with mask pattern one.">
+                <div class="mask pattern-1 flex-center waves-effect waves-light">
+                    <p class="white-text">.pattern-1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-100"><hr/></div>
+    <div class="row">
+        <div class="col-md-6 ">
+            <figure class="figure">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(73).jpg" class="figure-img img-fluid z-depth-1 wow fadeInUp"
+                    alt="..." style="width: 400px">
+                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+            </figure>
+        </div>
+        <div class="col-md-6">
+            <figure class="figure">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(73).jpg" class="figure-img img-fluid z-depth-1 wow fadeInUp"
+                    alt="..." style="width: 400px">
+                <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="w-100"><hr/></div>
+    <div class="row">
+        <div class="col-md-6 ">
+            <!--Mask with wave-->
+            <div class="view overlay">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(1).jpg" class="img-fluid wow fadeInUp" alt="Sample image with waves effect.">
+                <a>
+                    <div class="mask waves-effect waves-light rgba-white-slight"></div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!--Mask with wave-->
+            <div class="view overlay">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(7).jpg" class="img-fluid wow fadeInUp" alt="Sample image with waves effect.">
+            <a>
+                <div class="mask waves-effect rgba-white-slight"></div>
+            </a>
+            </div>
+        </div>
+        
+    </div>
     
 </main>
 {% block extra_js %}
     <!-- Your custom scripts (optional) -->
 <script type="text/javascript">
+$( document ).ready(function() {
+  new WOW().init();
+});
 //pie
 var ctxP = document.getElementById("pieChart").getContext('2d');
 var myPieChart = new Chart(ctxP, {
