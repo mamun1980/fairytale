@@ -4,9 +4,12 @@
 }
 
 .login-card-image {
-    background-image: url(/static/img/bg1.jpg);
-    background-size: cover;
+    background-image: url("/static/img/bg1.jpg");
     height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .signup-card-image {
