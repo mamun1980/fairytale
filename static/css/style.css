@@ -1,0 +1,37 @@
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.login-card-image {
+    background-image: url(/static/img/bg1.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.signup-card-image {
+    margin-top: 80px;
+    background-image: url(/static/img/irfan_bg5.jpg);
+    background-size: contain;
+    min-height: 90vh;
+}
+
+.btn-flat {
+    font-weight: 500;
+    color: inherit;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-flat:hover {
+    font-weight: 900;
+    background-color: transparent;
+    /* -webkit-box-shadow: none;
+    box-shadow: none; */
+}
+
+.login_form,
+.signup_form {
+    margin: 20px;
+}

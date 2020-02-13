@@ -9,63 +9,31 @@
     <div class="container">
 
         <!--Section: Post-->
-        <section class="mt-4">
+        <section class="row no-gutters mt-4">
+            <div class="col-md-6">
+                <!-- Card -->
+                <div class="card card-image login-card-image">
 
-            <!--Grid row-->
-            <div class="row">
-
-                <!--Grid column-->
-                <div class="col-md-8 mb-4">
-
-                    <!--Featured Image-->
-                    <div class="card mb-4 wow fadeIn">
-
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(144).jpg" class="img-fluid" alt="">
-
-                    </div>
-                    <!--/.Featured Image-->
-
-
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-4 mb-4">
-                    <!--Card : Dynamic content wrapper-->
-                    <div class="card mb-4 text-center wow fadeIn">
-
-                        <div class="card-header">Login / Signup</div>
-
-                        <!--Card content-->
-                        <div class="card-body">
-
-                            <!-- Default form login -->
-                            <form>
-
-                                <!-- Default input email -->
-                                <label for="defaultFormEmailEx" class="grey-text">Your email</label>
-                                <input type="email" id="defaultFormLoginEmailEx" class="form-control">
-
-                                <br>
-
-                                <!-- Default input password -->
-                                <label for="defaultFormNameEx" class="grey-text">Your name</label>
-                                <input type="text" id="defaultFormNameEx" class="form-control">
-
-                                <div class="text-center mt-4">
-                                    <button class="btn btn-info btn-md" type="submit">Sign up</button>
-                                </div>
-                            </form>
-                            <!-- Default form login -->
-
+                    <!-- Content -->
+                    <div class="card-body text-white text-center d-flex align-items-center rgba-black-strong py-2 px-4">
+                        <div>
+                            <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Fairytale</h5>
+                            <h3 class="card-title pt-2"><strong>Story taller can login here..!</strong></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                                optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+                                Odit sed qui, dolorum!.</p>
+                            <a class="btn btn-pink"><i class="fas fa-clone left"></i> View stories</a>
                         </div>
-
                     </div>
-                    <!--/.Card : Dynamic content wrapper-->
 
                 </div>
-                <!--Grid column-->
+                <!-- Card -->
+            </div>
+            <!--Grid col-->
+            <div class="col-sm-12 col-md-6">
 
+                {% include 'partials/login-form-with-card.html' %}
+                
             </div>
             <!--Grid row-->
 

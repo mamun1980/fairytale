@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block container %}
+{% include 'partials/header.html' %}
+<!--Main layout-->
+<main class="container-fluid signup-card-image">
+    
+    <!--Section: Post-->
+    <section class="row no-gutters mt-5 pt-4">
+        <div class="col-md-5">
+            <!-- Card -->
+            <div class="card">
+
+                
+            </div>
+            <!-- Card -->
+        </div>
+        <!--Grid col-->
+        <div class="col-sm-12 col-md-7">
+            
+            {% include 'partials/signup-form-with-card.html' %}
+            
+        </div>
+        <!--Grid row-->
+
+    </section>
+    <!--Section: Post-->
+
+</main>
+<!--Main layout-->
+{% endblock container %}

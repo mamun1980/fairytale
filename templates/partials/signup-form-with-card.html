@@ -1,0 +1,121 @@
+<!-- Material form register -->
+<div class="card rounded-0">
+
+    <h5 class="card-header default-color white-text text-center py-4 rounded-0">
+        <strong>Sign up</strong>
+    </h5>
+
+    <!--Card content-->
+    <div class="card-body px-lg-5 pt-0">
+
+        <!-- Form -->
+        <form class="text-center" style="color: #757575;" action="/accounts/register/">
+
+            <div class="form-row">
+                <div class="col-12 col-sm-6">
+                    <!-- First name -->
+                    <div class="md-form">
+                        <input type="text" id="first_name" name="first_name" class="form-control">
+                        <label for="first_name">First name</label>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <!-- Last name -->
+                    <div class="md-form">
+                        <input type="text" id="last_name" name="last_name" class="form-control">
+                        <label for="last_name">Last name</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-12 col-sm-6">
+                    <!-- E-mail -->
+                    <div class="md-form mt-0">
+                        <input type="email" id="email" name="email" class="form-control">
+                        <label for="email">E-mail</label>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <!-- Username -->
+                    <div class="md-form mt-0">
+                        <input type="text" id="username" name="username" class="form-control">
+                        <label for="username">Username</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-12 col-sm-6">
+                    <!-- Password -->
+                    <div class="md-form">
+                        <input type="password" id="password" class="form-control" name="password" aria-describedby="password_HelpBlock">
+                        <label for="password">Password</label>
+                        <small id="password_HelpBlock" class="form-text text-muted mb-4">
+                            At least 6 characters and 1 digit
+                        </small>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                    <!-- Password -->
+                    <div class="md-form">
+                        <input type="password" id="password2" class="form-control" name="password2" aria-describedby="password2_HelpBlock">
+                        <label for="password2">Confirm Password</label>
+                        <small id="password2_HelpBlock" class="form-text text-muted mb-4">
+                            At least 6 characters and 1 digit
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="form-row">
+                <div class="col-12 col-sm-6">
+                    <!-- Sign up button -->
+                        <button class="btn btn-outline-info btn-lg my-4 waves-effect rounded-pill" type="submit">Sign Up</button>
+                        Or  <a type="button" class=" " href="/accounts/login/">
+                         Login</a>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <!-- Social register -->
+                    <p class='border-bottom border-danger text-warning'>Or Sign up with:</p>
+
+                    <a class=" btn-floating fa-stack" style="color:#3B5998;">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                    </a>
+
+                    <a type="button" class="btn-floating fa-stack" style="color: #2C82CA;">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-linkedin-in fa-stack-1x fa-inverse "></i>
+                    </a>
+
+                    <a type="button" class="btn-floating fa-stack" style="color: #333;">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                    </a>
+                </div>
+
+            </div>
+            
+            <!-- Newsletter -->
+            <div class="form-check align-left">
+                <input type="checkbox" class="form-check-input" id="materialRegisterFormNewsletter">
+                <label class="form-check-label" for="materialRegisterFormNewsletter">Subscribe to our newsletter</label>
+            </div>
+            
+            
+            <hr>
+            <!-- Terms of service -->
+                <p class="col-12">By clicking
+                    <em>Sign up</em> you agree to our
+                    <a href="/accounts/terms-of-service/" target="_blank">terms of service</a>
+                </p>
+        </form>
+        <!-- Form -->
+
+    </div>
+
+</div>
+<!-- Material form register -->

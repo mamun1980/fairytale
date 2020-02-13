@@ -5,8 +5,8 @@
         <div class="container-fluid">
 
             <!-- Brand -->
-            <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
-                <strong class="blue-text">FAIRYTALE</strong>
+            <a class="navbar-brand btn-outline-default rounded-pill px-4" href="/">
+                <strong class=" indigo-text">FAIRYTALE</strong>
             </a>
 
             <!-- Collapse -->
@@ -20,23 +20,31 @@
 
                 <!-- Left -->
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link waves-effect" href="#">Home
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect btn btn-flat" href="/">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/"
-                            target="_blank">Books</a>
+                        <a class="nav-link waves-effect btn btn-flat" href="/books/" >Books</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link waves-effect"
-                            href="https://mdbootstrap.com/docs/jquery/getting-started/download/"
-                            target="_blank">Employees</a>
+                        <a class="nav-link waves-effect btn btn-flat"
+                            href="/accounts/employees/" >Employees</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link waves-effect" href="https://mdbootstrap.com/education/bootstrap/"
-                            target="_blank">Contact Us</a>
+                        <a class="nav-link waves-effect btn btn-flat"
+                            href="/accounts/writers/" >Writers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect btn btn-flat"
+                            href="/accounts/modarators/" >Modarators</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect btn btn-flat" href="/contact-us/" >Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect btn btn-flat" href="/about-us/">About Us</a>
                     </li>
                 </ul>
 
@@ -44,13 +52,13 @@
                 <ul class="navbar-nav nav-flex-icons">
 
                     <li class="nav-item">
-                        <a href="{% url 'login' %}" class="nav-link">
+                        <a href="{% url 'login' %}" class="nav-link btn btn-flat">
                             Login
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'register' %}" class="nav-link btn btn-outline-info btn-rounded waves-effect">
-                            Signup
+                        <a href="{% url 'register' %}" class="nav-link btn btn-outline-info waves-effect rounded-pill">
+                            Sign up
                         </a>
                     </li>
 
